@@ -1,0 +1,47 @@
+﻿using System.Numerics;
+
+namespace LeapManager.Wrappers
+{
+    internal class LeapObjects
+    {
+        public class HandObject
+        {
+            public bool IsLeft { get; set; }
+            public bool IsRight { get; set; }
+            public Vector3 PalmPosition { get; set; }
+            public Quaternion Rotation { get; set; }
+            public FingerObject[] Fingers { get; set; }
+        }
+
+        public class FingerObject
+        {
+            public FingerType Type { get; set; }
+            public BoneObject[] bones { get; set; }
+        }
+
+        public class BoneObject
+        {
+            public BoneType Type { get; set; }
+            public Quaternion Rotation { get; set; }
+        }
+
+        public enum FingerType
+        {
+            TYPE_THUMB = 0,
+            TYPE_INDEX = 1,
+            TYPE_MIDDLE = 2,
+            TYPE_RING = 3,
+            TYPE_PINKY = 4,
+            TYPE_UNKNOWN = -1
+        }
+
+        public enum BoneType
+        {
+            TYPE_INVALID = -1,
+            TYPE_METACARPAL = 0,
+            TYPE_PROXIMAL = 1,
+            TYPE_INTERMEDIATE = 2,
+            TYPE_DISTAL = 3
+        }
+    }
+}
