@@ -1,4 +1,6 @@
-﻿namespace LeapManager
+﻿using System.Diagnostics;
+
+namespace LeapManager
 {
     internal class Boot
     {
@@ -19,6 +21,7 @@
         public static void UnInitialize()
         {
             LeapController.StopConnection();
+            Process.GetCurrentProcess().Kill();
         }
 
         private static void OnLeapDeviceInitialized(object p_sender, Leap.DeviceEventArgs p_args)
