@@ -8,8 +8,8 @@ namespace LeapManager.Wrappers
         {
             public bool IsLeft { get; set; }
             public bool IsRight { get; set; }
-            public Vector3 PalmPosition { get; set; }
-            public Quaternion Rotation { get; set; }
+            public Position Position { get; set; }
+            public Rotation Rotation { get; set; }
             public FingerObject[] Fingers { get; set; }
         }
 
@@ -22,7 +22,22 @@ namespace LeapManager.Wrappers
         public class BoneObject
         {
             public BoneType Type { get; set; }
-            public Quaternion Rotation { get; set; }
+            public Rotation Rotation { get; set; }
+        }
+
+        public class Position
+        {
+            public float X { get; set; }
+            public float Y { get; set; }
+            public float Z { get; set; }
+        }
+
+        public class Rotation
+        {
+            public float X { get; set; }
+            public float Y { get; set; }
+            public float Z { get; set; }
+            public float W { get; set; }
         }
 
         public enum FingerType

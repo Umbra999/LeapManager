@@ -1,0 +1,167 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Coding\\Github\\LeapManager\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{90F75895-E552-403F-A919-0EE505FB4643}|LeapManager\\LeapManager.csproj|d:\\coding\\github\\leapmanager\\leapmanager\\pipeconnection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{90F75895-E552-403F-A919-0EE505FB4643}|LeapManager\\LeapManager.csproj|solutionrelative:leapmanager\\pipeconnection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{90F75895-E552-403F-A919-0EE505FB4643}|LeapManager\\LeapManager.csproj|d:\\coding\\github\\leapmanager\\leapmanager\\boot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{90F75895-E552-403F-A919-0EE505FB4643}|LeapManager\\LeapManager.csproj|solutionrelative:leapmanager\\boot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{90F75895-E552-403F-A919-0EE505FB4643}|LeapManager\\LeapManager.csproj|d:\\coding\\github\\leapmanager\\leapmanager\\wrappers\\leapobjects.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{90F75895-E552-403F-A919-0EE505FB4643}|LeapManager\\LeapManager.csproj|solutionrelative:leapmanager\\wrappers\\leapobjects.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{90F75895-E552-403F-A919-0EE505FB4643}|LeapManager\\LeapManager.csproj|d:\\coding\\github\\leapmanager\\leapmanager\\leapcsharp\\hand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{90F75895-E552-403F-A919-0EE505FB4643}|LeapManager\\LeapManager.csproj|solutionrelative:leapmanager\\leapcsharp\\hand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{90F75895-E552-403F-A919-0EE505FB4643}|LeapManager\\LeapManager.csproj|d:\\coding\\github\\leapmanager\\leapmanager\\leapcsharp\\logger.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{90F75895-E552-403F-A919-0EE505FB4643}|LeapManager\\LeapManager.csproj|solutionrelative:leapmanager\\leapcsharp\\logger.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{90F75895-E552-403F-A919-0EE505FB4643}|LeapManager\\LeapManager.csproj|d:\\coding\\github\\leapmanager\\leapmanager\\leapcsharp\\icontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{90F75895-E552-403F-A919-0EE505FB4643}|LeapManager\\LeapManager.csproj|solutionrelative:leapmanager\\leapcsharp\\icontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{90F75895-E552-403F-A919-0EE505FB4643}|LeapManager\\LeapManager.csproj|d:\\coding\\github\\leapmanager\\leapmanager\\leapcsharp\\copyfromotherextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{90F75895-E552-403F-A919-0EE505FB4643}|LeapManager\\LeapManager.csproj|solutionrelative:leapmanager\\leapcsharp\\copyfromotherextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{90F75895-E552-403F-A919-0EE505FB4643}|LeapManager\\LeapManager.csproj|d:\\coding\\github\\leapmanager\\leapmanager\\leapcsharp\\arm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{90F75895-E552-403F-A919-0EE505FB4643}|LeapManager\\LeapManager.csproj|solutionrelative:leapmanager\\leapcsharp\\arm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{90F75895-E552-403F-A919-0EE505FB4643}|LeapManager\\LeapManager.csproj|d:\\coding\\github\\leapmanager\\leapmanager\\leapmanager.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|",
+      "RelativeMoniker": "D:0:0:{90F75895-E552-403F-A919-0EE505FB4643}|LeapManager\\LeapManager.csproj|solutionrelative:leapmanager\\leapmanager.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 7,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Hand.cs",
+              "DocumentMoniker": "D:\\Coding\\Github\\LeapManager\\LeapManager\\LeapCSharp\\Hand.cs",
+              "RelativeDocumentMoniker": "LeapManager\\LeapCSharp\\Hand.cs",
+              "ToolTip": "D:\\Coding\\Github\\LeapManager\\LeapManager\\LeapCSharp\\Hand.cs",
+              "RelativeToolTip": "LeapManager\\LeapCSharp\\Hand.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABoAAAAVAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-02T03:22:03.286Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "LeapObjects.cs",
+              "DocumentMoniker": "D:\\Coding\\Github\\LeapManager\\LeapManager\\Wrappers\\LeapObjects.cs",
+              "RelativeDocumentMoniker": "LeapManager\\Wrappers\\LeapObjects.cs",
+              "ToolTip": "D:\\Coding\\Github\\LeapManager\\LeapManager\\Wrappers\\LeapObjects.cs",
+              "RelativeToolTip": "LeapManager\\Wrappers\\LeapObjects.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAqwBUAAAAfAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-02T03:11:59.542Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Logger.cs",
+              "DocumentMoniker": "D:\\Coding\\Github\\LeapManager\\LeapManager\\LeapCSharp\\Logger.cs",
+              "RelativeDocumentMoniker": "LeapManager\\LeapCSharp\\Logger.cs",
+              "ToolTip": "D:\\Coding\\Github\\LeapManager\\LeapManager\\LeapCSharp\\Logger.cs",
+              "RelativeToolTip": "LeapManager\\LeapCSharp\\Logger.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-02T02:59:30.263Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "IController.cs",
+              "DocumentMoniker": "D:\\Coding\\Github\\LeapManager\\LeapManager\\LeapCSharp\\IController.cs",
+              "RelativeDocumentMoniker": "LeapManager\\LeapCSharp\\IController.cs",
+              "ToolTip": "D:\\Coding\\Github\\LeapManager\\LeapManager\\LeapCSharp\\IController.cs",
+              "RelativeToolTip": "LeapManager\\LeapCSharp\\IController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-02T02:59:26.376Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "CopyFromOtherExtensions.cs",
+              "DocumentMoniker": "D:\\Coding\\Github\\LeapManager\\LeapManager\\LeapCSharp\\CopyFromOtherExtensions.cs",
+              "RelativeDocumentMoniker": "LeapManager\\LeapCSharp\\CopyFromOtherExtensions.cs",
+              "ToolTip": "D:\\Coding\\Github\\LeapManager\\LeapManager\\LeapCSharp\\CopyFromOtherExtensions.cs",
+              "RelativeToolTip": "LeapManager\\LeapCSharp\\CopyFromOtherExtensions.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-02T02:59:25.094Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Arm.cs",
+              "DocumentMoniker": "D:\\Coding\\Github\\LeapManager\\LeapManager\\LeapCSharp\\Arm.cs",
+              "RelativeDocumentMoniker": "LeapManager\\LeapCSharp\\Arm.cs",
+              "ToolTip": "D:\\Coding\\Github\\LeapManager\\LeapManager\\LeapCSharp\\Arm.cs",
+              "RelativeToolTip": "LeapManager\\LeapCSharp\\Arm.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-02T02:59:23.585Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "LeapManager",
+              "DocumentMoniker": "D:\\Coding\\Github\\LeapManager\\LeapManager\\LeapManager.csproj",
+              "RelativeDocumentMoniker": "LeapManager\\LeapManager.csproj",
+              "ToolTip": "D:\\Coding\\Github\\LeapManager\\LeapManager\\LeapManager.csproj",
+              "RelativeToolTip": "LeapManager\\LeapManager.csproj",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2023-12-09T05:02:47.102Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "PipeConnection.cs",
+              "DocumentMoniker": "D:\\Coding\\Github\\LeapManager\\LeapManager\\PipeConnection.cs",
+              "RelativeDocumentMoniker": "LeapManager\\PipeConnection.cs",
+              "ToolTip": "D:\\Coding\\Github\\LeapManager\\LeapManager\\PipeConnection.cs",
+              "RelativeToolTip": "LeapManager\\PipeConnection.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAqwEgAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2023-12-09T05:02:43.057Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Boot.cs",
+              "DocumentMoniker": "D:\\Coding\\Github\\LeapManager\\LeapManager\\Boot.cs",
+              "RelativeDocumentMoniker": "LeapManager\\Boot.cs",
+              "ToolTip": "D:\\Coding\\Github\\LeapManager\\LeapManager\\Boot.cs",
+              "RelativeToolTip": "LeapManager\\Boot.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAkAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2023-12-09T05:02:43.14Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

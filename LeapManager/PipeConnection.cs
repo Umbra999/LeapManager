@@ -1,8 +1,9 @@
-﻿using LeapManager.Wrappers;
-using Newtonsoft.Json;
+﻿using Leap;
+using LeapManager.Wrappers;
 using System.Net;
 using System.Net.Sockets;
 using System.Text;
+using System.Text.Json;
 
 namespace LeapManager
 {
@@ -19,44 +20,58 @@ namespace LeapManager
             Client = new(ipAddress.AddressFamily, SocketType.Stream, ProtocolType.Tcp);
             Client.Connect(remoteEP);
 
-            Logger.Log("Leap connected to Server");
-
-            new Thread(() =>
-            {
-                while (Client != null)
-                {
-                    try
-                    {
-                        byte[] bytes = new byte[5000];
-                        int bytesRec = Client.Receive(bytes);
-                        string Message = Encoding.ASCII.GetString(bytes, 0, bytesRec);
-
-                        string[] command = Message.Contains('/') ? Message.Split('/') : new string[] { Message };
-
-                        switch (command[0])
-                        {
-                            case "Shutdown":
-                                Boot.UnInitialize();
-                                break;
-                        }
-                    }
-                    catch (SocketException)
-                    {
-                        Boot.UnInitialize();
-                    }
-                }
-            }) { IsBackground = true }.Start();
-
             while (Client != null)
             {
                 try
                 {
-                    Leap.Frame l_frame = Boot.LeapController.Frame();
+                    Frame l_frame = Boot.LeapController.Frame();
 
-                    string RawHands = JsonConvert.SerializeObject(l_frame.Hands, Formatting.Indented, new JsonSerializerSettings() { ReferenceLoopHandling = ReferenceLoopHandling.Ignore });
-                    LeapObjects.HandObject[] Hands = JsonConvert.DeserializeObject<LeapObjects.HandObject[]>(RawHands);
+                    LeapObjects.HandObject[] Hands = new LeapObjects.HandObject[l_frame.Hands.Count];
+                    for (int i = 0; i < Hands.Length; i++)
+                    {
+                        Hands[i] = new LeapObjects.HandObject();
+                        Hands[i].IsLeft = l_frame.Hands[i].IsLeft;
+                        Hands[i].IsRight = l_frame.Hands[i].IsRight;
 
-                    SendMessage(JsonConvert.SerializeObject(Hands, Formatting.Indented, new JsonSerializerSettings() { ReferenceLoopHandling = ReferenceLoopHandling.Ignore }));
+                        Hands[i].Position = new LeapObjects.Position()
+                        {
+                            X = l_frame.Hands[i].PalmPosition.x,
+                            Y = l_frame.Hands[i].PalmPosition.y,
+                            Z = l_frame.Hands[i].PalmPosition.z
+                        };
+
+                        Hands[i].Rotation = new LeapObjects.Rotation()
+                        {
+                            X = l_frame.Hands[i].Rotation.x,
+                            Y = l_frame.Hands[i].Rotation.y,
+                            Z = l_frame.Hands[i].Rotation.z,
+                            W = l_frame.Hands[i].Rotation.w
+                        };
+
+                        Hands[i].Fingers = new LeapObjects.FingerObject[l_frame.Hands[i].Fingers.Count];
+                        for (int j = 0; j < Hands[i].Fingers.Length; j++)
+                        {
+                            Hands[i].Fingers[j] = new LeapObjects.FingerObject();
+                            Hands[i].Fingers[j].Type = (LeapObjects.FingerType)l_frame.Hands[i].Fingers[j].Type;
+
+                            Hands[i].Fingers[j].bones = new LeapObjects.BoneObject[l_frame.Hands[i].Fingers[j].bones.Length];
+                            for (int k = 0; k < Hands[i].Fingers[j].bones.Length; k++)
+                            {
+                                Hands[i].Fingers[j].bones[k] = new LeapObjects.BoneObject();
+                                Hands[i].Fingers[j].bones[k].Type = (LeapObjects.BoneType)l_frame.Hands[i].Fingers[j].bones[k].Type;
+
+                                Hands[i].Fingers[j].bones[k].Rotation = new LeapObjects.Rotation()
+                                {
+                                    X = l_frame.Hands[i].Fingers[j].bones[k].Rotation.x,
+                                    Y = l_frame.Hands[i].Fingers[j].bones[k].Rotation.y,
+                                    Z = l_frame.Hands[i].Fingers[j].bones[k].Rotation.z,
+                                    W = l_frame.Hands[i].Fingers[j].bones[k].Rotation.w,
+                                };
+                            }
+                        }
+                    }
+
+                    SendMessage(JsonSerializer.Serialize(Hands));
 
                     Thread.Sleep(1);
                 }
